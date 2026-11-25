@@ -7,7 +7,7 @@ public class Soundex
 {
     public string Encode(string word)
     {
-        return "";
+        return word + "000";
     }
 }
 public class SoundexTests
@@ -23,8 +23,8 @@ public class SoundexTests
     [Test]
     public void SoundexTestsSimplePasses()
     {
-       Assert.AreEqual("A", s.Encode("A"));
-       Assert.AreEqual("I", s.Encode("I"));
+       Assert.AreEqual(s.Encode("A"), "A000");
+       Assert.AreEqual(s.Encode("I"), "I000");
     }
 
 }
