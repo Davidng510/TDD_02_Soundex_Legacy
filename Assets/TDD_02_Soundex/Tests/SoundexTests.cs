@@ -27,4 +27,11 @@ public class SoundexTests
        Assert.AreEqual(s.Encode("I"), "I000");
     }
 
+    [Test]
+
+    public void Replace_Consonants_SpecifiedDigits()
+    {
+        Assert.AreEqual("A100", s.Encode("Ab"));
+    }
+
 }
